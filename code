@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(void) {
+	int t,n,x,y,z,count,k,j,a,b,c;
+	scanf("%d",&t);
+	while(t--)
+	{
+	  scanf("%d %d %d %d",&n,&k,&x,&y);
+	  if(n==k)
+      printf("%d\n",k*x);
+    else if(x>y)
+      printf("%d\n",(k*x)+(n-k)*y);
+    else
+      printf("%d\n",(k*x)+(n-k)*x);
+	}
+	return 0;
+}
